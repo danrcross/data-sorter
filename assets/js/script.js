@@ -160,7 +160,7 @@ function convertExcelToJson() {
       function forADate(dateChosen) {
         function isValidTimeFormat(value) {
           // Regular expression to match the "H:MM" format
-          var timeRegex = /^(0?[1-9]|1[0-2]):[0-5][0-9]$/;
+          var timeRegex = /^(0?[0-9]|1[0-2]):[0-5][0-9]$/;
           return timeRegex.test(value);
         }
 
@@ -253,7 +253,7 @@ function convertExcelToJson() {
             resultObject[category][key] = value;
 
           }
-
+          console.log(resultObject)
           return resultObject;
         }
 
