@@ -1,0 +1,35 @@
+#form-container {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 50%;
+}
+
+#dates {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.date-container:nth-child(even) {
+    background-color: lightgray;
+}
+
+.date-container:nth-child(odd) {
+    background-color: rgb(235, 229, 229);
+}
+#list-container-full, #list-container {
+font-size: 30px;
+font-weight: bolder;
+}
+
+ul {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li {
+    font-size: 15px;
+    font-weight: lighter;
+}
