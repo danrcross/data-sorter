@@ -352,8 +352,11 @@ function convertExcelToJson() {
           var parsedValue = convertExcelTimeToMinutes(value);
 
           if (!isNaN(parsedValue)) {
-            if (parsedValue<135){
+            if (parsedValue<75){
             var result = Math.max(parsedValue, 0);
+
+            }else if (parsedValue>75&&parsedValue<135){
+              var result= Math.max(75, 0)
             }else if (parsedValue>135){
               var result= Math.max(parsedValue-60, 0)
             }
